@@ -1,6 +1,5 @@
 
-import Header from "./components/Header/header";
-import Login from "./components/login";
+import LoginTodo from "./components/loginTodo";
 import Obtener from "./components/obtenerCanchas";
 import Reservas from "./components/reservas";
 
@@ -24,7 +23,7 @@ const App = () => {
             <Reservas/>
             
             </div>
-        ) : (<Login/>)
+        ) : (<LoginTodo/>)
       }
       
     </div>

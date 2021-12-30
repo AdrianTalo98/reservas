@@ -67,6 +67,7 @@ const Obtener = () => {
           postName();
 
           alert("Reservado con exito");
+          window.location.reload();
         
         //console.log(data)
         //console.log(JSON.stringify(data))
@@ -104,6 +105,7 @@ const Obtener = () => {
           postName();
 
           alert("Reservado con exito");
+          window.location.reload();
         
         //console.log(data)
         //console.log(JSON.stringify(data))
@@ -139,6 +141,7 @@ const Obtener = () => {
           postName();
 
           alert("Reservado con exito");
+          window.location.reload();
         
         //console.log(data)
         //console.log(JSON.stringify(data))

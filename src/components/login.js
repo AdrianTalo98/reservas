@@ -36,6 +36,7 @@ function Login() {
           }
 
           postName()
+          window.location.reload();
         
         //console.log(state)
     }
@@ -76,13 +77,9 @@ function Login() {
                   >
                       Ingresar
                   </button>
-              </form>
-
-              <Registrar/>
+              </form>           
  
-
-
-          </div>
+           </div>
       )
   }
 

@@ -45,6 +45,7 @@ function Registrar(props) {
             }         
             postName()
             alert("redyson")
+            window.location.reload();
 
             
             
