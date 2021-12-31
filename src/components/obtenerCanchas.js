@@ -14,7 +14,7 @@ const Obtener = () => {
 
     const Canchas1 = async() =>{
         
-        await fetch('http://localhost:5000/canchas1')//localhost recoradr añadir la wea al proxy en packet json
+        await fetch('/canchas1')//localhost recoradr añadir la wea al proxy en packet json
         //.then(resp => resp.json())
         .then(resp => resp.json())
         .then(data => setCanchas1(data))
@@ -22,14 +22,14 @@ const Obtener = () => {
     }
     const Canchas2 = async() =>{
         
-        await fetch('http://localhost:5000/canchas2')
+        await fetch('/canchas2')
         .then(resp => resp.json())
         .then(data => setCanchas2(data))
 
     }
     const Canchas3 = async() =>{
         
-        await fetch('http://localhost:5000/canchas3')
+        await fetch('/canchas3')
         .then(resp => resp.json())
         .then(data => setCanchas3(data))
 
@@ -55,7 +55,7 @@ const Obtener = () => {
 
         async function postName() {
             
-            const response = await fetch('http://localhost:5000/reservar', {
+            const response = await fetch('/reservar', {
               method: 'POST',
               body: JSON.stringify(data),
               headers: {
@@ -93,7 +93,7 @@ const Obtener = () => {
 
         async function postName() {
             
-            const response = await fetch('http://localhost:5000/reservar', {
+            const response = await fetch('/reservar', {
               method: 'POST',
               body: JSON.stringify(data),
               headers: {
@@ -129,7 +129,7 @@ const Obtener = () => {
 
         async function postName() {
             
-            const response = await fetch('http://localhost:5000/reservar', {
+            const response = await fetch('/reservar', {
               method: 'POST',
               body: JSON.stringify(data),
               headers: {
@@ -163,8 +163,8 @@ const Obtener = () => {
                     
                                 
                                 <div className="col">
-                                <div className="card">
-                                    <img src="https://terrasoccer.cl/wp-content/uploads/2019/09/football-field.png" className="card-img-top" alt="..."></img>
+                                <div className="card mt-2">
+                                    <img src="https://i.ibb.co/LZ75z84/canchas.png" className="card-img-top" alt="..."></img>
                                     <div className="card-body">
                                     <h5 className="card-title">Cancha 000001</h5>
 
@@ -213,8 +213,8 @@ const Obtener = () => {
                     
 
                                 <div className="col">
-                                <div className="card">
-                                    <img src="https://terrasoccer.cl/wp-content/uploads/2019/09/football-field.png" className="card-img-top" alt="..."></img>
+                                <div className="card mt-2">
+                                    <img src="https://i.ibb.co/LZ75z84/canchas.png" className="card-img-top" alt="..."></img>
                                     <div className="card-body">
                                     <h5 className="card-title">Cancha 000002</h5>
 
@@ -255,8 +255,8 @@ const Obtener = () => {
                     
 
                                 <div className="col">
-                                <div className="card">
-                                    <img src="https://terrasoccer.cl/wp-content/uploads/2019/09/football-field.png" className="card-img-top" alt="..."></img>
+                                <div className="card mt-2">
+                                    <img src="https://i.ibb.co/LZ75z84/canchas.png" className="card-img-top" alt="..."></img>
                                     <div className="card-body">
                                     <h5 className="card-title">Cancha 000003</h5>
 

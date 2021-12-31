@@ -13,7 +13,7 @@ const MisReservas = (props) => {
 
     async function obtener() {        
             
-        const response = await fetch('http://localhost:5000/misReservas', {//cambiar /register a /newUser
+        const response = await fetch('/misReservas', {//cambiar /register a /newUser
           method: 'POST',
           body: JSON.stringify(state),
           headers: {
@@ -33,7 +33,7 @@ const MisReservas = (props) => {
     },[]) 
 
     async function Cancel(data){
-        const response = await fetch('http://localhost:5000/cancelar', {//cambiar /register a /newUser
+        const response = await fetch('/cancelar', {//cambiar /register a /newUser
           method: 'POST',
           body: JSON.stringify(data),
           headers: {

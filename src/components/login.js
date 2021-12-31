@@ -24,7 +24,7 @@ function Login() {
 
         async function postName() {
             
-            const response = await fetch('http://localhost:5000/login', {
+            const response = await fetch('/login', {
               method: 'POST',
               body: JSON.stringify(state),
               headers: {

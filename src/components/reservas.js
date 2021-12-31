@@ -6,7 +6,7 @@ const Reservas = () => {
 
     const historial = async() =>{
         
-        await fetch('http://localhost:5000/reservas')
+        await fetch('/reservas')
         .then(resp => resp.json())
         .then(data => setData(data))
 

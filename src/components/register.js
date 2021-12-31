@@ -29,7 +29,7 @@ function Registrar(props) {
 
             async function postName() {
             
-                const response = await fetch('http://localhost:5000/register', {//cambiar /register a /newUser
+                const response = await fetch('/register', {//cambiar /register a /newUser
                   method: 'POST',
                   body: JSON.stringify(state),
                   headers: {
