@@ -8,6 +8,7 @@ const MisReservas = (props) => {
         id : props.usuario
     }
 
+
     const [res,setRes] = useState('')
 
     async function obtener() {        
@@ -31,6 +32,28 @@ const MisReservas = (props) => {
         obtener() 
     },[]) 
 
+    async function Cancel(data){
+        const response = await fetch('http://localhost:5000/cancelar', {//cambiar /register a /newUser
+          method: 'POST',
+          body: JSON.stringify(data),
+          headers: {
+            'Content-Type': 'application/json'}
+        });
+        const responseText = await response.text();
+        console.log(responseText)
+
+    }
+
+    const handleCancelar = (e) => {
+        const cancelar = {
+            codigo_reserva : e.target.value
+        }
+        //console.log(cancelar)
+        Cancel(cancelar)
+        window.location.reload();
+        
+    }
+
     
 
     
@@ -49,6 +72,7 @@ const MisReservas = (props) => {
                             <th scope="col">Rut cliente</th>
                             <th scope="col">Fecha</th>
                             <th scope="col">Hora</th>
+                            <th scope="col">Cancelar</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -60,6 +84,7 @@ const MisReservas = (props) => {
                                         <td>{data.rut_cliente}</td>
                                         <td>{data.fecha.substr(0,10)}</td>
                                         <td>{data.hora}</td>
+                                        <td><button className="btn btn-danger" onClick={handleCancelar} value={data.codigo_reserva}>Cancelar</button></td>
                                     </tr>
                                 ))
                             }
